@@ -1,0 +1,21 @@
+mixin button(text, link, icon)
+	if icon
+			a(class="button" href= link) #{text}
+				i(class="fas " + icon)
+	else
+			a(class="button" href= link) #{text}		
+
+mixin button-color(text, link, color)
+	if color
+			a(class="button button--"+color, href= link) #{text}
+	else
+			a(class="button" href= link) #{text}
+
+mixin button-middle(text, link)
+	a(class="button button--middle" href= link) #{text}
+
+mixin button-shadow(text, link)
+	a(class="button button--shadow" href= link) #{text}
+
+mixin button-small(text, link)
+	a(class="button button--small" href= link) #{text}

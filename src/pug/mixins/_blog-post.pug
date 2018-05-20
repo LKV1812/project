@@ -1,0 +1,15 @@
+mixin caption(text)
+	.caption #{text}
+
+mixin block-info(name, subject, date, comments)
+	.block-info
+		p.block-info__name #{name}
+		a(class="block-info__link" href="#") #{subject}
+		p.block-info__date #{date}
+		a(class="block-info__link" href="#") #{comments}
+
+mixin blog-img(link)
+	.blog-img
+		img(class="blog-img__picture" alt="Йосемити" src= link)
+
+
